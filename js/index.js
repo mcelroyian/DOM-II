@@ -110,7 +110,15 @@ document.addEventListener('mousemove', (e) => {
     console.log(`rgb (${r},${g}, 255)`)
 })
 
+// #9 use wheel to add lorem ipsum to paragraph
+let intro = get('.intro p')
+let lorum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis vel lacus imperdiet vulputate."
+intro.addEventListener('wheel', e => {
+    e.preventDefault()
+    e.target.innerText += lorum;
+})
 
+// #10 idk
 
 
 
@@ -123,7 +131,6 @@ Events
     focus
     cut
     copy
-    wheel
     resize
 
 */
